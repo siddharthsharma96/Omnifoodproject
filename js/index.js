@@ -31,3 +31,10 @@ var checklen = () => {
 };
 
 // console.log(pass.value);
+const btnNavEls = document.getElementsByClassName("btn-mobile-nav");
+const headerEls = document.getElementsByClassName("header");
+const btnNavEl = btnNavEls[0];
+const headerEl = headerEls[0];
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
